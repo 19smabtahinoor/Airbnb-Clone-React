@@ -1,0 +1,72 @@
+[
+    {
+        "id":1,
+        "image":"https://a0.muscache.com/im/pictures/b11ec978-551a-4386-8656-3bf8fcf75e7a.jpg?im_w=960",
+        "location":"Kolkata",
+        "category":"Hotel Room",
+        "title":"Maple -The Residence",
+        "description":"16 guestes. 31 bedrooms. 30 beds. 31 baths",
+        "price": "$19/night",
+        "totalPrice":"$113 total"
+    },
+    {
+        "id":2,
+        "image":"https://a0.muscache.com/im/pictures/e3fc8e56-cdf0-47dd-99dc-5610467c581d.jpg?im_w=960",
+        "location":"Dhaka",
+        "category":"Hotel Room",
+        "title":"White Palace Hotel",
+        "description":"2 guestes. 50 bedrooms. 6 beds. 50 baths",
+        "price": "$86/night",
+        "totalPrice":"$514 total"
+    },
+    {
+        "id":3,
+        "image":"https://a0.muscache.com/im/pictures/3d21f31b-9837-4c18-84c7-19956a670caa.jpg?im_w=720",
+        "location":"Dorset",
+        "category":"Beach",
+        "title":"Seaview Apartment",
+        "description":"4 guestes. 2 bedrooms.3 beds. 2 baths",
+        "price": "$195/night",
+        "totalPrice":"$1198 total"
+    },
+    {
+        "id":4,
+        "image":"https://a0.muscache.com/im/pictures/1632a1b7-bd74-49cf-be54-e8dedd7d5a55.jpg?im_w=960",
+        "location":"Dorset",
+        "category":"Hotel Room",
+        "title":"Farm stay",
+        "description":"4 guestes. 2 bedrooms.3 beds. 2 baths",
+        "price": "$78/night",
+        "totalPrice":"$1194 total"
+    },
+    {
+        "id":5,
+        "image":"https://a0.muscache.com/im/pictures/453efc29-d14e-4edf-b1ba-5dd82a63e3f7.jpg?im_w=960",
+        "location":"Dhaka",
+        "category":"Apartment",
+        "title":"Entire condominium",
+        "description":"4 guests · 2 bedrooms · 2 beds · 2 baths",
+        "price": "$60/night",
+        "totalPrice":"$1594 total"
+    },
+    {
+        "id":6,
+        "image":"https://a0.muscache.com/im/pictures/cbe98d6c-a5e7-4cd7-8390-3ca91c2b3cd7.jpg?im_w=960",
+        "location":"London",
+        "category":"Hotel Room",
+        "title":"Entire loft",
+        "description":"2 guests · Studio · 1 bed · 1 bath",
+        "price": "$1000/night",
+        "totalPrice":"$150094 total"
+    },
+    {
+        "id":7,
+        "image":"https://a0.muscache.com/im/pictures/6101647f-0585-46b4-b028-ae6cbf35e368.jpg?im_w=960",
+        "location":"Kolkata",
+        "category":"Hotel Room",
+        "title":"Hotel Miskisan",
+        "description":"4 guests · 2 bedrooms · 2 beds · 2 baths",
+        "price": "$120/night",
+        "totalPrice":"$13294 total"
+    }
+]

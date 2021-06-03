@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin:0px; padding:0px;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+    overflow-x:hidden;
+}
+body::-webkit-scrollbar{
+  width:4px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background:#ddd;
+  border-radius:50px;
+}
+.searchIcon {
+    width: 2.5em !important;
+    height: 2.5em !important;
+    font-size: 0.8rem !important;
+    left:310px  !important;
+    top: 8px;
+}
+
+.languageIcon{
+  width: 1em !important;
+  height: 1em !important;
+  font-size: 1.2rem !important;
+}
+.usericon{
+  width: 1em !important;
+  height: 1em !important;
+  font-size: 1.8rem !important;
+}
+.banner{
+  background: linear-gradient(#00000000,#000000ad),url("https://i.ibb.co/xX8wsPn/banner.webp");
+  height: 90vh;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.bannerInfo{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  min-height:57vh;
+  width:auto;
+}
+.bannerButton{
+  background:#ffffff !important;
+  color:#111827 !important;
+  text-transfrom:capitalize !important;
+  font-size:12px !important;
+  padding:10px 0px !important;
+  margin-top:30px !important;
+  border:none !important;
+  outline:none !important;
+  font-weight:600 !important;
+}
+.bannerButton:hover{
+  background:#111827 !important;
+  color:white!important;
+}
+
+.header{
+  background:#00000057;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition:0.5s;
+}
+
+.header.active{
+  background:white;
+}
+
+.searchIconDate {
+  width: 2.7em !important;
+  height: 2.7em !important;
+  font-size: 1rem !important;
+  cursor:pointer;
+  position:relative;
+  left:4%;
+
+}
+
+.flex.flex-row.flex-grow.w-full.justify-center.space-x-4.items-center.bg-gray-100.rounded-full.relative.top-10.hidden.lg\:inline-flex.xl\:inline-flex.m-5 {
+  width: 765px;
+  margin-left:50%;
+  transform:translate(-50%,-50%)
+}
+
+.flex.flex-row.flex-grow.w-full.justify-center.space-x-4.items-center.bg-gray-100.rounded-full.relative.top-10.hidden.lg\:inline-flex.xl\:inline-flex.m-5 {
+  margin-top: 82px;
+}
+
+.search{
+  position:absolute;
+  top:21%;
+  left:29%;
+  width:100vw;
+}
+
+.logo.active{
+  filter:none;
+}
+
+.SearchPageButton{
+  border-radius:50px !important;
+  outline:none !important;
+  text-transform:inherit !important;
+
+}
+
+.searchiMageWrapper{
+  width:200px !important;
+  height:200px !important;
+}
+.searchiMage{
+  width:300px !important;
+  height:200px !important;
+  object-fit:cover !important;
+}
+@media screen and (max-width:500px){
+  .searchiMageWrapper{
+    width:100% !important;
+    height:250px !important;
+  }
+  .searchiMage{
+    width:100% !important;
+    height:250px !important;
+    object-fit:cover !important;
+  }
+}
