@@ -29,6 +29,7 @@ function Header() {
     }
 
     window.addEventListener('scroll', changeHeader)
+    
     return (
         <>
             <header className={header ? "header active shadow-lg" : "header"}>

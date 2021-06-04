@@ -42,10 +42,10 @@ function Banner() {
 
                         <div className=" px-8 py-3  rounded-full hover:bg-gray-200 hover:shadow-lg cursor-pointer" onClick={() => { setShowGuests(!showGuests) }}>
                             <h2 className="text-sm font-bold text-gray-700">Guests</h2>
-                            <span className="text-gray-600 text-sm">{adultsCounter +childrenCounter+ infantCounter} Guests</span>
+                            <span className="text-gray-600 text-sm">{adultsCounter + childrenCounter + infantCounter} Guests</span>
                         </div>
                         <NavLink to="/search">
-                        <SearchOutlinedIcon className="searchIconDate bg-red-500 text-white rounded-full p-1" />
+                            <SearchOutlinedIcon className="searchIconDate bg-red-500 text-white rounded-full p-1" />
                         </NavLink>
                     </div>
 
@@ -53,7 +53,7 @@ function Banner() {
                     {showGuests &&
                         <div className="absolute bg-white right-60 rounded-xl shadow-xl p-8">
 
-                            <div className="flex space-x-14 items-center border-b-2 border-gray-300 py-3">
+                            <div className="flex space-x-14 items-center border-b-2 border-gray-100 py-3">
                                 <div>
                                     <h1 className="font-bold">Adults</h1>
                                     <span className="text-sm">Ages 13 or above</span>
@@ -61,71 +61,81 @@ function Banner() {
 
                                 <div className="flex items-center space-x-3">
                                     <RemoveIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
-                                    onClick={ () => {
-                                        if(adultsCounter > 0 ){
-                                            setAdultsCounter(adultsCounter - 1)
-                                        }else{                                    
-                                            setAdultsCounter(0)
-                                        }
-                                    }} />
+                                        onClick={() => {
+                                            if (adultsCounter > 0) {
+                                                setAdultsCounter(adultsCounter - 1)
+                                            } else {
+                                                setAdultsCounter(0)
+                                            }
+                                        }} />
                                     <span>{adultsCounter}</span>
                                     <AddIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
                                         onClick={() => {
-                                            setAdultsCounter(
-                                                adultsCounter + 1
-                                            )
+                                            if (adultsCounter < 5) {
+                                                setAdultsCounter(adultsCounter + 1)
+                                            } else {
+                                                setAdultsCounter(5)
+                                            }
                                         }}
                                     />
                                 </div>
                             </div>
 
 
-                            <div className="flex flex-grow flex-row items-center border-b-2 border-gray-300 py-3">
+                            <div className="flex flex-grow flex-row items-center border-b-2 border-gray-100 py-3">
                                 <div className="w-full">
                                     <h1 className="font-bold">Children</h1>
                                     <span className="text-sm">Ages 2-12</span>
                                 </div>
 
                                 <div className="flex items-center flex-row justify-end space-x-3">
-                                    <RemoveIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1" 
-                                        onClick={ () => {
-                                            if(childrenCounter > 0){
+                                    <RemoveIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
+                                        onClick={() => {
+                                            if (childrenCounter > 0) {
                                                 setChildrenCounter(childrenCounter - 1)
-                                            }else{
+                                            } else {
                                                 setChildrenCounter(0)
                                             }
                                         }}
                                     />
                                     <span>{childrenCounter}</span>
                                     <AddIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
-                                    onClick={ () => {
-                                        setChildrenCounter(childrenCounter + 1)
-                                    }}
+                                        onClick={() => {
+                                            if (childrenCounter < 5) {
+                                                setChildrenCounter(childrenCounter + 1)
+                                            } else {
+                                                setChildrenCounter(5)
+                                            }
+                                        }}
                                     />
                                 </div>
                             </div>
 
 
-                            <div className="flex space-x-14 items-center border-b-2 border-gray-300 py-3">
+                            <div className="flex space-x-14 items-center border-b-2 border-gray-100 py-3">
                                 <div className="w-full">
                                     <h1 className="font-bold">Infants</h1>
                                     <span className="text-sm">Under 2</span>
                                 </div>
                                 <div className="flex items-center space-x-3">
                                     <RemoveIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
-                                    onClick={ () => {
-                                        if(infantCounter > 0){
-                                            setInfantCounter(infantCounter - 1)
-                                        }else{
-                                            setInfantCounter(0)
-                                        }
-                                    }}
+                                        onClick={() => {
+                                            if (infantCounter > 0) {
+                                                setInfantCounter(infantCounter - 1)
+                                            } else {
+                                                setInfantCounter(0)
+                                            }
+                                        }}
                                     />
                                     <span>{infantCounter}</span>
                                     <AddIcon className="text-gray-600 border border-gray-300 rounded-full cursor-pointer p-1"
-                                    onClick={ () => {
-                                        setInfantCounter(infantCounter + 1)
-                                    }}
+                                        onClick={() => {
+                                            if (infantCounter < 5) {
+                                                setInfantCounter(infantCounter + 1)
+                                            } else {
+                                                setInfantCounter(5)
+                                            }
+                                        }}
                                     />
                                 </div>
                             </div>
@@ -147,5 +157,5 @@ function Banner() {
         </>
     );
 }
-
+// export {adultsCounter,childrenCounter,infantCounter}
 export default Banner;

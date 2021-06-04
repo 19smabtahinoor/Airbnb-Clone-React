@@ -7,7 +7,7 @@ function SearchPage() {
     const[data,setData] = useState(SearchData)
 
     const filteringPlace = (location) => {
-        const filterPlace = data.filter( (item) => {
+        const filterPlace = SearchData.filter( (item) => {
             return(
                 item.location === location
             )
@@ -35,7 +35,8 @@ function SearchPage() {
                     {/* Search result data  */}
 
                     <div className="col-span-1">
-                        {data.map((items) => {
+                        {data
+                        .map((items) => {
                             return (
                                 <SearchResult
                                     key={items.id}
